@@ -1,0 +1,27 @@
+[
+  {
+    "question": "How many days of PTO do employees receive annually?",
+    "gold_answer": "15 days",
+    "expected_source": "pto_policy.md"
+  },
+  {
+    "question": "Is alcohol reimbursement allowed?",
+    "gold_answer": "No",
+    "expected_source": "expense_policy.md"
+  },
+  {
+    "question": "What is the maximum number of remote work days per week?",
+    "gold_answer": "3 days",
+    "expected_source": "remote_work_policy.md"
+  },
+  {
+    "question": "Do unused PTO days roll over to next year?",
+    "gold_answer": "No",
+    "expected_source": "pto_policy.md"
+  },
+  {
+    "question": "Are receipts required for meals under $25?",
+    "gold_answer": "No",
+    "expected_source": "expense_policy.md"
+  }
+]

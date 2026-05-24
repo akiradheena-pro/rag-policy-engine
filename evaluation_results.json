@@ -1,0 +1,62 @@
+[
+  {
+    "question": "How many days of PTO do employees receive annually?",
+    "answer": "employees receive 15 days of pto per year. (source: paid time off (pto) policy)",
+    "sources": [
+      "data\\policies\\remote_work_policy.md",
+      "data\\policies\\pto_policy.md",
+      "data\\policies\\expense_policy.md"
+    ],
+    "latency_ms": 16259.11,
+    "grounded": true,
+    "correct_citation": true
+  },
+  {
+    "question": "Is alcohol reimbursement allowed?",
+    "answer": "no, alcohol reimbursement is not allowed. \n\nsource: expense reimbursement policy",
+    "sources": [
+      "data\\policies\\remote_work_policy.md",
+      "data\\policies\\pto_policy.md",
+      "data\\policies\\expense_policy.md"
+    ],
+    "latency_ms": 8668.16,
+    "grounded": true,
+    "correct_citation": true
+  },
+  {
+    "question": "What is the maximum number of remote work days per week?",
+    "answer": "according to the remote work policy, employees may work remotely up to 3 days per week.",
+    "sources": [
+      "data\\policies\\remote_work_policy.md",
+      "data\\policies\\pto_policy.md",
+      "data\\policies\\expense_policy.md"
+    ],
+    "latency_ms": 7654.29,
+    "grounded": true,
+    "correct_citation": true
+  },
+  {
+    "question": "Do unused PTO days roll over to next year?",
+    "answer": "unused pto does not roll over to next year. \n\nsource: paid time off (pto) policy",
+    "sources": [
+      "data\\policies\\remote_work_policy.md",
+      "data\\policies\\pto_policy.md",
+      "data\\policies\\expense_policy.md"
+    ],
+    "latency_ms": 7693.96,
+    "grounded": true,
+    "correct_citation": true
+  },
+  {
+    "question": "Are receipts required for meals under $25?",
+    "answer": "yes, according to the expense reimbursement policy, meals under $25 do not require a receipt. (source: expense reimbursement policy)",
+    "sources": [
+      "data\\policies\\remote_work_policy.md",
+      "data\\policies\\pto_policy.md",
+      "data\\policies\\expense_policy.md"
+    ],
+    "latency_ms": 8313.16,
+    "grounded": true,
+    "correct_citation": true
+  }
+]
