@@ -4,8 +4,10 @@ from langchain_chroma import Chroma
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_groq import ChatGroq
 from langchain_core.prompts import ChatPromptTemplate
+
 # Load environment variables from .env file (if present)
 load_dotenv()
+
 def ask_question(query: str):
     """
     Answers a user question using RAG over company policies.
@@ -57,16 +59,20 @@ def ask_question(query: str):
         temperature=0  # deterministic responses
     )
     
-    # 6. Prompt with strict guardrails
+    # 6. Prompt with strict guardrails (FIXED FOR YES/NO LOGIC)
     prompt_template = """
 You are an HR Policy Assistant. Answer ONLY based on the provided context.
 If the answer is not in the context, say: "I cannot answer this question based on the provided policies."
 Always cite the source document name(s) in your answer.
 Keep answers concise and professional.
+IMPORTANT: If the question is a Yes/No question, start your answer with "Yes" or "No" followed by the explanation. Ensure your Yes/No aligns logically with the policy. For example, if the policy says "X is NOT required", and the question is "Is X required?", the answer must be "No".
+
 Context:
 {context}
+
 Question:
 {question}
+
 Answer:
 """
     
@@ -85,6 +91,7 @@ Answer:
         "sources": sources,
         "snippets": snippets
     }
+
 # --- Local Test Block (for development only) ---
 if __name__ == "__main__":
     print("🧪 Testing RAG Pipeline...\n")
